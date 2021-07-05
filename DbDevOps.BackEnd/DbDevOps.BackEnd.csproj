@@ -9,10 +9,12 @@
     <None Remove="XmlModel\" />
     <None Remove="Newtonsoft.Json" />
     <None Remove="Resources\" />
+    <None Remove="Microsoft.AspNet.Cors" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Xml.XmlDocument" Version="4.3.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNet.Cors" Version="5.2.7" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="XmlModel\" />
