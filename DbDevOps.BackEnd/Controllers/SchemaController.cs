@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DbDevOps.BackEnd.Controllers {
     public class GlobalSchema {
-        private static DBSchema schema = DBSchema.LoadDBSchema("/Users/adalbertocajueiro/Projects/DBDevOps/DBDevOpsXmlAPI/resources/DATABASE_STRUCTURE_2.0.xml");
+        private static DBSchema schema = DBSchema.LoadDBSchema("/Users/adalbertocajueiro/Projects/DbDevOps.BackEnd/DbDevOps.BackEnd/Resources/DATABASE_STRUCTURE_2.0.xml");
         public static DBSchemaNode GetSchema() {
             return schema.Schema;
         }

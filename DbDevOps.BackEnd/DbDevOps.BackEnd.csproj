@@ -8,6 +8,7 @@
     <None Remove="System.Xml.XmlDocument" />
     <None Remove="XmlModel\" />
     <None Remove="Newtonsoft.Json" />
+    <None Remove="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Xml.XmlDocument" Version="4.3.0" />
@@ -15,5 +16,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="XmlModel\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
 </Project>
