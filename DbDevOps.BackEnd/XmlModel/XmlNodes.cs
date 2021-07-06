@@ -21,7 +21,7 @@ namespace DbDevOps.BackEnd.XmlModel {
      */
 
     public interface DBModelNode {
-        public Dictionary<string, string> Attributes { get; set; }
+        public DBModelNodeList<DBAttributeNode> Attributes { get; set; }
         public DBModelNode Parent { get; set; }
         public bool modified { get; set; }
     }
@@ -30,12 +30,12 @@ namespace DbDevOps.BackEnd.XmlModel {
      */
     public abstract class AbstractDBModelNode : DBModelNode {
 
-        public Dictionary<string, string> Attributes { get; set; }
+        public DBModelNodeList<DBAttributeNode> Attributes { get; set; }
         public DBModelNode Parent { get; set; }
         public bool modified { get; set; }
 
         public AbstractDBModelNode() {
-            this.Attributes = new Dictionary<string, string>();
+            this.Attributes = new DBModelNodeList<DBAttributeNode>();
         }
 
         /**
@@ -44,12 +44,12 @@ namespace DbDevOps.BackEnd.XmlModel {
          * null, its value is filled with "".
          */
         public void setAttribute(string name, string value) {
-
+            DBAttributeNode attr = new DBAttributeNode();
+            attr.attributeName = name;
             if (value != null) { //if has some value
-                Attributes.Add(name, value);
-            } else {
-                Attributes.Add(name, "");
+                attr.attributeValue = value;
             }
+            Attributes.Add(attr);
         }
     }
     /**
@@ -115,5 +115,9 @@ namespace DbDevOps.BackEnd.XmlModel {
     }
     public class DBMethodNode : AbstractDBModelNode {
         public DBModelNodeList<DBModelNode> Arguments { get; set; }
+    }
+    public class DBAttributeNode : AbstractDBModelNode {
+        public string attributeName {get;set;}
+        public string attributeValue { get; set; }
     }
 }

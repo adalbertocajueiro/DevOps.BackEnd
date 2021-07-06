@@ -99,7 +99,10 @@ namespace DbDevOps.BackEnd.XmlModel {
 
             //get schema node attributes
             foreach (XmlAttribute attribute in node.Attributes) {
-                result.Attributes.Add(attribute.Name, attribute.Value);
+                DBAttributeNode attr = new DBAttributeNode();
+                attr.attributeName = attribute.Name;
+                attr.attributeValue = attribute.Value;
+                result.Attributes.Add(attr);
             }
 
             //visit all children of a schema node
@@ -148,7 +151,10 @@ namespace DbDevOps.BackEnd.XmlModel {
 
             //get node attributes
             foreach (XmlAttribute attribute in node.Attributes) {
-                result.Attributes.Add(attribute.Name, attribute.Value);
+                DBAttributeNode attr = new DBAttributeNode();
+                attr.attributeName = attribute.Name;
+                attr.attributeValue = attribute.Value;
+                result.Attributes.Add(attr);
             }
 
             //tables are composed by columns, constraints and indexes
@@ -168,7 +174,10 @@ namespace DbDevOps.BackEnd.XmlModel {
 
             //get node attributes
             foreach (XmlAttribute attribute in node.Attributes) {
-                result.Attributes.Add(attribute.Name, attribute.Value);
+                DBAttributeNode attr = new DBAttributeNode();
+                attr.attributeName = attribute.Name;
+                attr.attributeValue = attribute.Value;
+                result.Attributes.Add(attr);
             }
 
             //procedures are composed by arguments
@@ -183,7 +192,10 @@ namespace DbDevOps.BackEnd.XmlModel {
 
             //get node attributes
             foreach (XmlAttribute attribute in node.Attributes) {
-                result.Attributes.Add(attribute.Name, attribute.Value);
+                DBAttributeNode attr = new DBAttributeNode();
+                attr.attributeName = attribute.Name;
+                attr.attributeValue = attribute.Value;
+                result.Attributes.Add(attr);
             }
 
             //functions are composed by arguments
@@ -198,7 +210,10 @@ namespace DbDevOps.BackEnd.XmlModel {
 
             //get node attributes
             foreach (XmlAttribute attribute in node.Attributes) {
-                result.Attributes.Add(attribute.Name, attribute.Value);
+                DBAttributeNode attr = new DBAttributeNode();
+                attr.attributeName = attribute.Name;
+                attr.attributeValue = attribute.Value;
+                result.Attributes.Add(attr);
             }
 
             //packages are composed by methods
@@ -213,7 +228,10 @@ namespace DbDevOps.BackEnd.XmlModel {
 
             //get node attributes
             foreach (XmlAttribute attribute in node.Attributes) {
-                result.Attributes.Add(attribute.Name, attribute.Value);
+                DBAttributeNode attr = new DBAttributeNode();
+                attr.attributeName = attribute.Name;
+                attr.attributeValue = attribute.Value;
+                result.Attributes.Add(attr);
             }
 
             return result;
@@ -224,7 +242,10 @@ namespace DbDevOps.BackEnd.XmlModel {
 
             //get node attributes
             foreach (XmlAttribute attribute in node.Attributes) {
-                result.Attributes.Add(attribute.Name, attribute.Value);
+                DBAttributeNode attr = new DBAttributeNode();
+                attr.attributeName = attribute.Name;
+                attr.attributeValue = attribute.Value;
+                result.Attributes.Add(attr);
             }
 
             return result;
@@ -235,7 +256,10 @@ namespace DbDevOps.BackEnd.XmlModel {
 
             //get node attributes
             foreach (XmlAttribute attribute in node.Attributes) {
-                result.Attributes.Add(attribute.Name, attribute.Value);
+                DBAttributeNode attr = new DBAttributeNode();
+                attr.attributeName = attribute.Name;
+                attr.attributeValue = attribute.Value;
+                result.Attributes.Add(attr);
             }
 
             //views are composed by columns
@@ -250,7 +274,10 @@ namespace DbDevOps.BackEnd.XmlModel {
 
             //get node attributes
             foreach (XmlAttribute attribute in node.Attributes) {
-                result.Attributes.Add(attribute.Name, attribute.Value);
+                DBAttributeNode attr = new DBAttributeNode();
+                attr.attributeName = attribute.Name;
+                attr.attributeValue = attribute.Value;
+                result.Attributes.Add(attr);
             }
 
             return result;
@@ -261,7 +288,10 @@ namespace DbDevOps.BackEnd.XmlModel {
 
             //get node attributes
             foreach (XmlAttribute attribute in node.Attributes) {
-                result.Attributes.Add(attribute.Name, attribute.Value);
+                DBAttributeNode attr = new DBAttributeNode();
+                attr.attributeName = attribute.Name;
+                attr.attributeValue = attribute.Value;
+                result.Attributes.Add(attr);
             }
 
             return result;
@@ -272,7 +302,10 @@ namespace DbDevOps.BackEnd.XmlModel {
 
             //get node attributes
             foreach (XmlAttribute attribute in node.Attributes) {
-                result.Attributes.Add(attribute.Name, attribute.Value);
+                DBAttributeNode attr = new DBAttributeNode();
+                attr.attributeName = attribute.Name;
+                attr.attributeValue = attribute.Value;
+                result.Attributes.Add(attr);
             }
 
             return result;
@@ -283,7 +316,10 @@ namespace DbDevOps.BackEnd.XmlModel {
 
             //get node attributes
             foreach (XmlAttribute attribute in node.Attributes) {
-                result.Attributes.Add(attribute.Name, attribute.Value);
+                DBAttributeNode attr = new DBAttributeNode();
+                attr.attributeName = attribute.Name;
+                attr.attributeValue = attribute.Value;
+                result.Attributes.Add(attr);
             }
 
             //methods are composed by arguments
@@ -298,7 +334,10 @@ namespace DbDevOps.BackEnd.XmlModel {
 
             //get node attributes
             foreach (XmlAttribute attribute in node.Attributes) {
-                result.Attributes.Add(attribute.Name, attribute.Value);
+                DBAttributeNode attr = new DBAttributeNode();
+                attr.attributeName = attribute.Name;
+                attr.attributeValue = attribute.Value;
+                result.Attributes.Add(attr);
             }
 
             return result;
